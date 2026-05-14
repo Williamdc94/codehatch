@@ -1,0 +1,198 @@
+.faq-section{
+
+    width:100%;
+
+    padding:20px 30px 60px;
+
+}
+
+/* TITLE */
+
+.faq-subtitle{
+
+    text-align:center;
+
+    color:#2563eb;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:28px;
+
+}
+
+/* GRID */
+
+.faq-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+/* ITEM */
+
+.faq-item{
+
+    background:white;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+
+}
+
+.faq-item:hover{
+
+    border-color:#2563eb;
+
+}
+
+/* QUESTION */
+
+.faq-question{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:20px 22px;
+
+}
+
+.faq-question h4{
+
+    font-size:15px;
+
+    color:#0f172a;
+
+    font-weight:500;
+
+}
+
+/* ICON */
+
+.faq-icon{
+
+    font-size:22px;
+
+    color:#64748b;
+
+    transition:0.3s ease;
+
+    flex-shrink:0;
+
+}
+
+.faq-item.active .faq-icon{
+
+    transform:rotate(180deg);
+
+}
+
+/* ANSWER */
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:0.3s ease;
+
+}
+
+.faq-answer p{
+
+    padding:0 22px 22px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+.thebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.thebtn button{
+    width: 20%;
+    height:54px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-weight:600;
+    font-size:15px;
+    cursor:pointer;
+    transition: 0.5s ease;
+}
+.thebtn button:hover{
+    background:white;
+    color:#2563eb;
+
+}
+
+/* OPEN */
+
+.faq-item.active .faq-answer{
+
+    max-height:200px;
+
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .faq-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .faq-section{
+
+        padding:20px 20px 50px;
+
+    }
+
+    .faq-question{
+
+        padding:18px;
+
+    }
+
+    .faq-question h4{
+
+        font-size:14px;
+
+    }
+    .thebtn button{
+        width: 50%;
+    }
+
+}

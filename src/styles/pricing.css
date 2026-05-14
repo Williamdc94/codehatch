@@ -1,0 +1,213 @@
+.pricing-section{
+    width:100%;
+    padding:60px 70px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:28px;
+
+    background:#f8fafc;
+}
+
+/* COMMON */
+.pricing-left,
+.pricing-form,
+.how-it-works{
+    background:white;
+    border-radius:18px;
+    padding:32px;
+    border:1px solid #edf2f7;
+}
+
+.pricing-subtitle{
+    color:#2563eb;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.pricing-left h2{
+    color:#0f172a;
+    font-size:34px;
+    line-height:1.3;
+    margin-bottom:28px;
+}
+
+/* PRICE CARDS */
+.price-cards{
+    display:flex;
+    gap:18px;
+    margin-bottom:22px;
+}
+
+.price-card{
+    flex:1;
+    border:1px solid #e2e8f0;
+    border-radius:16px;
+    padding:24px 20px;
+    text-align:center;
+}
+
+.price-card.active{
+    background:#031b4e;
+    color:white;
+}
+
+.price-card h4{
+    font-size:13px;
+    margin-bottom:16px;
+}
+
+.price-card h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.price-card span{
+    text-decoration:line-through;
+    opacity:0.7;
+    display:block;
+    margin-bottom:12px;
+}
+
+.price-card p{
+    font-size:14px;
+}
+
+/* NOTE */
+.pricing-note{
+    margin-top:18px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:#64748b;
+    font-size:14px;
+}
+.pricing-note div{
+    font-size: 18px;
+}
+
+.note-icon{
+    font-size:20px;
+    color:#2563eb;
+}
+
+
+/* FORM */
+.form-text{
+    color:#64748b;
+    margin-bottom:22px;
+    font-size:14px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+form input,
+form select{
+    height:52px;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    padding:0 16px;
+    font-size:14px;
+    outline:none;
+}
+
+form button{
+    height:54px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-weight:600;
+    font-size:15px;
+    cursor:pointer;
+    transition: 0.5s ease;
+}
+
+form button:hover{
+    background-color: white;
+    color: #2563eb;
+}
+
+.pricing-form small{
+    display:block;
+    margin-top:18px;
+    color:#64748b;
+    text-align:center;
+}
+
+/* STEPS */
+.steps{
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+}
+
+.step{
+    display:flex;
+    gap:18px;
+}
+
+.step-number{
+    width:42px;
+    height:42px;
+    background:#2563eb;
+    color:white;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:600;
+
+    flex-shrink:0;
+}
+
+.step h4{
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+.step p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* TABLET */
+@media(max-width:1100px){
+
+    .pricing-section{
+        grid-template-columns:1fr;
+        padding:50px 40px;
+    }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .pricing-section{
+        padding:40px 20px;
+    }
+
+    .pricing-left,
+    .pricing-form,
+    .how-it-works{
+        padding:24px;
+    }
+
+    .pricing-left h2{
+        font-size:28px;
+    }
+
+    .price-cards{
+        flex-direction:column;
+    }
+}

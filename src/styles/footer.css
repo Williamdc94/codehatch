@@ -1,0 +1,165 @@
+.footer{
+    width:100%;
+
+    background:#000814;
+
+    padding:40px 0;
+
+    margin-top:40px;
+}
+
+.footer-container{
+    width:calc(100% - 60px);
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1fr;
+
+    gap:40px;
+
+    align-items:flex-start;
+}
+
+/* BRAND */
+
+.footer-logo{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #2563eb;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    border-radius: 10px;
+    color: #2563eb;
+    font-size: 22px;
+    font-weight: bold;
+}
+.footer-logo img{
+    width: 40px;
+    height: 46px;
+}
+
+.footer-brand p{
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+    max-width:260px;
+}
+
+/* LINKS */
+.footer-links h4,
+.footer-socials h4{
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:16px;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-links a{
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+    font-size:14px;
+
+    transition:0.3s ease;
+}
+
+.footer-links a:hover{
+    color:#2563eb;
+}
+
+/* SOCIALS */
+.social-icons{
+    display:flex;
+    gap:12px;
+}
+
+.social-icons a{
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    transition:0.3s ease;
+
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    background:#2563eb;
+
+    border-color:#2563eb;
+
+    transform:translateY(-3px);
+}
+
+/* COPYRIGHT */
+.footer-copy p{
+    color:#cbd5e1;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+/* TABLET */
+@media(max-width:900px){
+
+    .footer-container{
+        grid-template-columns:
+        1fr 1fr;
+    }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .footer{
+        padding:50px 0;
+    }
+
+    .footer-container{
+        width:calc(100% - 24px);
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+    }
+
+    .footer-brand img{
+        width:160px;
+    }
+
+    .social-icons{
+        flex-wrap:wrap;
+    }
+}

@@ -1,0 +1,96 @@
+.stats{
+    width:100%;
+    background:white;
+    padding:70px 70px;
+    text-align:center;
+}
+
+.stats-subtitle{
+    color:#2563eb;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:45px;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+}
+
+/* CARD */
+.stat-card{
+    flex:1;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    transition:0.3s ease;
+    border:1px solid #edf2f7;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.stat-icon{
+    width:60px;
+    height:60px;
+    background:#031b4e;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-size:24px;
+    flex-shrink:0;
+}
+
+.stat-card h2{
+    color:#031b4e;
+    font-size:28px;
+    margin-bottom:5px;
+    text-align:left;
+}
+
+.stat-card p{
+    color:#64748b;
+    font-size:15px;
+    text-align:left;
+}
+
+/* TABLET */
+@media(max-width:1024px){
+
+    .stats{
+        padding:60px 30px;
+    }
+
+    .stats-container{
+        flex-wrap:wrap;
+    }
+
+    .stat-card{
+        min-width:45%;
+    }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .stats{
+        padding:50px 20px;
+    }
+
+    .stats-container{
+        flex-direction:column;
+    }
+
+    .stat-card{
+        width:100%;
+    }
+}
