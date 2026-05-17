@@ -1,26 +1,18 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Stats from "./components/stats"
-import AchievementCurriculum from "./components/AchievementCurriculum"
-import WhyCodehatch from "./components/WhyCodehatch"
-import PricingSection from "./components/PricingSection"
-import FAQ from "./components/FAQ"
-import CTA from "./components/CTA"
-import Footer from "./components/Footer"
+import LandingPage from "./pages/LandingPage"
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+import Payment from "./pages/Payment"
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <Stats/>
-      <AchievementCurriculum/>
-      <WhyCodehatch/>
-      <PricingSection/>
-      <FAQ/>
-      <CTA/>
-      <Footer/>
+      <Routes>  
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/payment" element={<Payment />} />
+      </Routes>
 
     </>
   )
