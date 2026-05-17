@@ -25,7 +25,7 @@ function Navbar(){
                 <li><a href="#pricing">Contact</a></li>
             </ul>
 
-            <button className="join-btn">Join the challenge</button>
+            <a href="#pricing"><button className="join-btn">Join the challenge</button></a>
             {/*harmburger menu*/}
             <div className="harmburger" onClick={() => setIsOpen(!isOpen)}>
                 <span className={`bar ${isOpen ? 'open' : ''}`}></span>

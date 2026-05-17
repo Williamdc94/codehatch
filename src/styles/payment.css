@@ -48,16 +48,18 @@
   font-size: 18px;
 }
 
+/* Bank logo + name side by side */
 .bank-info {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 12px; /* space between logo and name */
+  gap: 12px;
   margin: 10px 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bank-logo {
-  width: 40px; /* adjust size */
+  width: 40px;
   height: auto;
 }
 
@@ -67,18 +69,19 @@
   color: white;
 }
 
+/* Account number stacked with hint underneath */
+.account-number-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
 
 .account-number {
   font-size: 28px !important;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 6px; /* space before the hint */
-}
-.account-number-box {
-  display: flex;
-  flex-direction: column; /* stack number and hint vertically */
-  align-items: center;    /* center them horizontally */
-  cursor: pointer;
+  margin-bottom: 6px;
 }
 
 .copy-hint {
@@ -86,13 +89,14 @@
   color: #64748b;
 }
 
+/* WhatsApp button with icon aligned */
 .whatsapp-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   width: 100%;
-  background: #25D366; /* WhatsApp green */
+  background: #25D366;
   padding: 16px;
   border-radius: 12px;
   color: white;
@@ -108,4 +112,28 @@
 
 .whatsapp-icon {
   font-size: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .payment-card {
+    padding: 25px 20px;
+  }
+
+  .payment-card h1 {
+    font-size: 24px;
+  }
+
+  .account-number {
+    font-size: 22px;
+  }
+
+  .whatsapp-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .whatsapp-icon {
+    font-size: 18px;
+  }
 }

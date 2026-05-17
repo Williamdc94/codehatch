@@ -35,14 +35,15 @@ function Hero() {
           </div>
 
           <div className="hero-users">
-            <div className="avatars">
-              <img src="i.pravatar.cc/40?img=1" />
-              <img src="i.pravatar.cc/40?img=2" />
-              <img src="i.pravatar.cc/40?img=3" />
-              <img src="i.pravatar.cc/40?img=4" />
-            </div>
-            <p>200+ students are already building with Codehatch</p>
-          </div>
+  <div className="avatars">
+    <img src="https://i.pravatar.cc/40?img=1" alt="student avatar 1" />
+    <img src="https://i.pravatar.cc/40?img=2" alt="student avatar 2" />
+    <img src="https://i.pravatar.cc/40?img=3" alt="student avatar 3" />
+    <img src="https://i.pravatar.cc/40?img=4" alt="student avatar 4" />
+  </div>
+  <p>200+ students are already building with Codehatch</p>
+</div>
+
 
         </div>
 
