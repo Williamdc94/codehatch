@@ -77,8 +77,8 @@ function PricingSection() {
         <p className="form-text">Fill the form to reserve your spot</p>
 
         <form ref={formRef} onSubmit={sendEmail}>
-          <input type="text" name="fullName" placeholder="Full Name" required />
-          <input type="text" name="phoneNumber" placeholder="Phone Number" required />
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="text" name="phone" placeholder="Phone Number" required />
           <input type="email" name="email" placeholder="Email Address" required />
           <select name="level" required>
             <option value="">Select your level</option>
